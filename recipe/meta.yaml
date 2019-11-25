@@ -26,6 +26,8 @@ requirements:
 test:
   imports:
     - sentry_sdk
+  commands:
+    - "{{ PYTHON }} -m pip check"
 
 about:
   home: https://github.com/getsentry/sentry-python
