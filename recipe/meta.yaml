@@ -16,7 +16,9 @@ build:
 
 requirements:
   host:
-    - python
+    # The package works on python 2, but the aiohttp integration
+    # doesn't. Avoid syntax errors in install by building on 3.
+    - python >=3
     - pip
   run:
     - python
@@ -24,8 +26,12 @@ requirements:
     - certifi
 
 test:
+  requires:
+    - pip
   imports:
     - sentry_sdk
+  commands:
+    - pip check
 
 about:
   home: https://github.com/getsentry/sentry-python
