@@ -1,5 +1,5 @@
 {% set name = "sentry-sdk" %}
-{% set version = "0.14.1" %}
+{% set version = "0.14.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e023da07cfbead3868e1e2ba994160517885a32dfd994fc455b118e37989479b
+  sha256: 480eee754e60bcae983787a9a13bc8f155a111aef199afaa4f289d6a76aa622a
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vvv"
+  script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'The new Python SDK for Sentry.io'
+  summary: The new Python SDK for Sentry.io
   description: |
     The new Python SDK for Sentry.io
   doc_url: https://docs.sentry.io/quickstart/?platform=python
