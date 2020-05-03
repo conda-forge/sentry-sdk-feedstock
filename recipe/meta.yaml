@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python
-    - urllib3 >=1.9
+    - urllib3 >=1.10
     - certifi
 
 test:
