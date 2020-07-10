@@ -5,7 +5,7 @@ Home: https://github.com/getsentry/sentry-python
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: The new Python SDK for Sentry.io
 
