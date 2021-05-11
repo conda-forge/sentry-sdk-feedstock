@@ -21,7 +21,7 @@ requirements:
     - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - urllib3 >=1.10
     - certifi
 
