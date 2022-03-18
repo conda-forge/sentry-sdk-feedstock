@@ -5,7 +5,7 @@ Home: https://github.com/getsentry/sentry-python
 
 Package license: BSD-2-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sentry-sdk-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sentry-sdk-feedstock/blob/main/LICENSE.txt)
 
 Summary: The new Python SDK for Sentry.io
 
@@ -22,8 +22,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5813&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sentry-sdk-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5813&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sentry-sdk-feedstock?branchName=main">
       </a>
     </td>
   </tr>
