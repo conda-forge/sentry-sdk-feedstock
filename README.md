@@ -5,15 +5,15 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sentry-sdk-feed
 
 Home: https://github.com/getsentry/sentry-python
 
-Package license: BSD-2-Clause
+Package license: MIT
 
-Summary: The new Python SDK for Sentry.io
+Summary: The official Python SDK for Sentry.io
 
 Development: https://github.com/getsentry/sentry-python
 
-Documentation: https://docs.sentry.io/quickstart/?platform=python
+Documentation: https://docs.sentry.io/platforms/python/
 
-The new Python SDK for Sentry.io
+The official Python SDK for Sentry.io
 
 
 Current build status
