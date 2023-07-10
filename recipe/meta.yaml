@@ -1,28 +1,26 @@
 {% set name = "sentry-sdk" %}
-{% set version = "1.21.1" %}
+{% set version = "1.26.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 99c15556a23621be9f18c2955f7ce63321713bf1c0ad396b27b61399bac5f458
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sentry-sdk-{{ version }}.tar.gz
+  sha256: 760e4fb6d01c994110507133e08ecd4bdf4d75ee4be77f296a3579796cf73134
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
   host:
-    # The package works on python 2, but the aiohttp integration
-    # doesn't. Avoid syntax errors in install by building on 3.
-    - python >=3
+    - python >=3.7
     - pip
   run:
-    - python >=3
-    - urllib3 >=1.10
+    - python >=3.7
+    - urllib3 >=1.25.7    
     - certifi
 
 test:
@@ -35,13 +33,13 @@ test:
 
 about:
   home: https://github.com/getsentry/sentry-python
-  license: BSD-2-Clause
-  license_family: BSD
+  license: MIT
+  license_family: MIT
   license_file: LICENSE
-  summary: The new Python SDK for Sentry.io
+  summary: The official Python SDK for Sentry.io 
   description: |
-    The new Python SDK for Sentry.io
-  doc_url: https://docs.sentry.io/quickstart/?platform=python
+     The official Python SDK for Sentry.io 
+  doc_url: https://docs.sentry.io/platforms/python/
   dev_url: https://github.com/getsentry/sentry-python
 
 extra:
