@@ -153,4 +153,5 @@ Feedstock Maintainers
 * [@alippai](https://github.com/alippai/)
 * [@dgasmith](https://github.com/dgasmith/)
 * [@djsutherland](https://github.com/djsutherland/)
+* [@rxm7706](https://github.com/rxm7706/)
 
