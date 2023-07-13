@@ -1,5 +1,5 @@
 {% set name = "sentry-sdk" %}
-{% set version = "1.28.0" %}
+{% set version = "1.28.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sentry-sdk-{{ version }}.tar.gz
-  sha256: 2281ba98011cfa9bc9bb15c1074b6dd9f7fdfce94033cd25b50f18f078ffed4c
+  sha256: dcd88c68aa64dae715311b5ede6502fd684f70d00a7cd4858118f0ba3153a3ae
 
 build:
   noarch: python
@@ -36,9 +36,9 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: The official Python SDK for Sentry.io 
+  summary: The official Python SDK for Sentry.io
   description: |
-     The official Python SDK for Sentry.io 
+    The official Python SDK for Sentry.io 
   doc_url: https://docs.sentry.io/platforms/python/
   dev_url: https://github.com/getsentry/sentry-python
 
