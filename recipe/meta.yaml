@@ -1,5 +1,5 @@
 {% set name = "sentry-sdk" %}
-{% set version = "1.39.0" %}
+{% set version = "1.39.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sentry-sdk-{{ version }}.tar.gz
-  sha256: 67f62238af273eebd6432f85116dc6cd5422d4bc02df886514e8139e755f48e4
+  sha256: 320a55cdf9da9097a0bead239c35b7e61f53660ef9878861824fd6d9b2eaf3b5
 
 build:
   noarch: python
