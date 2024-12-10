@@ -12,21 +12,22 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - urllib3 >=1.25.7
     - certifi
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - sentry_sdk
   commands:
